@@ -3,6 +3,8 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Work Project/Binar/Android Wave 9 ( KM )/Chapter 5/Project/TodoListApp/app/src/main/res/drawable-v24/bg_gradient_black.xml" value="0.37083333333333335" />
+        <entry key="..\:/Work Project/Binar/Android Wave 9 ( KM )/Chapter 5/Project/TodoListApp/app/src/main/res/drawable/bg_gradient_black.xml" value="0.37083333333333335" />
         <entry key="..\:/Work Project/Binar/Android Wave 9 ( KM )/Chapter 5/Project/TodoListApp/app/src/main/res/drawable/ic_about.xml" value="0.18" />
         <entry key="..\:/Work Project/Binar/Android Wave 9 ( KM )/Chapter 5/Project/TodoListApp/app/src/main/res/drawable/ic_add_todo.xml" value="0.22" />
         <entry key="..\:/Work Project/Binar/Android Wave 9 ( KM )/Chapter 5/Project/TodoListApp/app/src/main/res/drawable/ic_share.xml" value="0.11" />
@@ -10,8 +12,11 @@
         <entry key="..\:/Work Project/Binar/Android Wave 9 ( KM )/Chapter 5/Project/TodoListApp/app/src/main/res/drawable/ic_task_done_false.xml" value="0.13177083333333334" />
         <entry key="..\:/Work Project/Binar/Android Wave 9 ( KM )/Chapter 5/Project/TodoListApp/app/src/main/res/drawable/ic_task_done_true.xml" value="0.13177083333333334" />
         <entry key="..\:/Work Project/Binar/Android Wave 9 ( KM )/Chapter 5/Project/TodoListApp/app/src/main/res/layout/activity_main.xml" value="0.33" />
+        <entry key="..\:/Work Project/Binar/Android Wave 9 ( KM )/Chapter 5/Project/TodoListApp/app/src/main/res/layout/activity_task_detail.xml" value="0.3546875" />
+        <entry key="..\:/Work Project/Binar/Android Wave 9 ( KM )/Chapter 5/Project/TodoListApp/app/src/main/res/layout/activity_task_form.xml" value="0.33" />
         <entry key="..\:/Work Project/Binar/Android Wave 9 ( KM )/Chapter 5/Project/TodoListApp/app/src/main/res/layout/fragment_task_list.xml" value="0.3546875" />
-        <entry key="..\:/Work Project/Binar/Android Wave 9 ( KM )/Chapter 5/Project/TodoListApp/app/src/main/res/layout/item_task.xml" value="0.5" />
+        <entry key="..\:/Work Project/Binar/Android Wave 9 ( KM )/Chapter 5/Project/TodoListApp/app/src/main/res/layout/item_task.xml" value="0.33" />
+        <entry key="..\:/Work Project/Binar/Android Wave 9 ( KM )/Chapter 5/Project/TodoListApp/app/src/main/res/menu/menu_main.xml" value="0.3546875" />
       </map>
     </option>
   </component>

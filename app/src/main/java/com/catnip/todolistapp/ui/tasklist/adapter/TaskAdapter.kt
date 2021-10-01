@@ -11,7 +11,10 @@ import com.catnip.todolistapp.databinding.ItemTaskBinding
 Written with love by Muhammad Hermas Yuda Pamungkas
 Github : https://github.com/hermasyp
  **/
-class TaskAdapter(private val itemClick: (Task, Int) -> Unit) :
+class TaskAdapter(
+    private val itemClick: (Task, Int) -> Unit,
+    private val itemLongClick: (Task, Int) -> Unit
+) :
     RecyclerView.Adapter<TaskAdapter.ViewHolder>() {
 
     var items: List<Task> = mutableListOf()
@@ -23,7 +26,7 @@ class TaskAdapter(private val itemClick: (Task, Int) -> Unit) :
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         // creating view for item in recyclerview
         val binding = ItemTaskBinding.inflate(LayoutInflater.from(parent.context), parent, false)
-        return ViewHolder(binding, itemClick)
+        return ViewHolder(binding, itemClick,itemLongClick)
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
@@ -34,7 +37,8 @@ class TaskAdapter(private val itemClick: (Task, Int) -> Unit) :
 
     class ViewHolder(
         private val binding: ItemTaskBinding,
-        private val itemClick: (Task, Int) -> Unit
+        private val itemClick: (Task, Int) -> Unit,
+        private val itemLongClick: (Task, Int) -> Unit
     ) : RecyclerView.ViewHolder(binding.root) {
 
         fun bindView(item: Task, position: Int) {
@@ -42,6 +46,10 @@ class TaskAdapter(private val itemClick: (Task, Int) -> Unit) :
                 binding.tvTitleTask.text = title
                 itemView.setOnClickListener {
                     itemClick(item, position)
+                }
+                itemView.setOnLongClickListener {
+                    itemLongClick(item, position)
+                    true
                 }
             }
         }
