@@ -7,6 +7,7 @@ import android.view.MenuItem
 import androidx.appcompat.app.AppCompatActivity
 import com.catnip.todolistapp.R
 import com.catnip.todolistapp.databinding.ActivityMainBinding
+import com.catnip.todolistapp.ui.about.AboutDialogFragment
 import com.catnip.todolistapp.ui.taskform.TaskFormActivity
 import com.catnip.todolistapp.ui.tasklist.TaskListFragment
 import com.catnip.todolistapp.utils.views.ViewPagerAdapter
@@ -47,13 +48,17 @@ class MainActivity : AppCompatActivity() {
                 true
             }
             R.id.menu_about -> {
-                // TODO: 01/10/2021 open dialog about
+                openDialogAbout()
                 true
             }
             else -> {
                 true
             }
         }
+    }
+
+    private fun openDialogAbout() {
+        AboutDialogFragment().show(supportFragmentManager,null)
     }
 
 
